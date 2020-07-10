@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://someserver/OneFullDB?createDatabaseIfNotExist=true
+    username: someuser
+    password: somepass
+    driver-class-name: com.mysql.jdbc.Driver

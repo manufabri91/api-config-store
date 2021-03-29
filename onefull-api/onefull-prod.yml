@@ -1,6 +1,5 @@
 spring:
   datasource:
-    url: jdbc:mysql://someserver/OneFullDB?createDatabaseIfNotExist=true
-    username: someuser
-    password: somepass
-    driver-class-name: com.mysql.jdbc.Driver
+    url: '{cipher}fc8f06bc59f3866b524d02bec124d13923adced7a3e1cb226d1320c49cd7c5cc9523bed3705a594e5262dc5dfbbc8d4617a4f2a744caba515f506b3424fb2b720ae219b69dfade221150ac576ac5dd355b0832f9ed403d4b7f121e02d2480f427ff1789213c06602fbeb305a5d85d2febb857ff781c4a74e638aa9f1dd80d5da4f358e6772706001c4056d364bf22966bbcc97586444cfc98027d27ac8e52a8e'
+    username: '{cipher}2f2856ea646a36debc140a8c1f2da121d931b8b0a659904e4010a6383d2b8da1ec5350803a2ea1a435f38c183b2b9c79'
+    password: '{cipher}2c62b6ca9bc27b1f34b842a56543317f7b01301aff8af4829e2670859078dd0aabd2f52858846cda0ed696bf14dc8a74'

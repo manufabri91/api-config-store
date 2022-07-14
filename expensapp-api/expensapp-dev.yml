@@ -1,5 +1,5 @@
 spring:
   datasource:
-    url: '{cipher}toBeDefined'
-    username: '{cipher}toBeDefined'
-    password: '{cipher}toBeDefined'
+    url: '{cipher}2f8da1fd21f5e74c54dcfd36afe1db0bdbd606fd968137f5f18276ac05db55f0bb43b1860f0ea882a124e9fac50d2470c55afeac32597313db9a402a49b3345983f801d5e1a8cd3c4b3622d04af1fa05775aa12ae4ff171b03cce6a3c41fdc4cc5e637ac17ad61819c286b5349184010deeb1de72ea201b67db5eda828ae8091'
+    username: '{cipher}de70213625b8f24bc86cdb3fd1b9ccae2790e08258fa97281d140624fd0afda9'
+    password: '{cipher}d6a92883df76d15689d26ffdb5b97d9c3e8f9d0896245ed9dd9b5b88c74e0c50a4b68b2cea9c9b8eec77f3ef104746bf'

@@ -1,15 +1,14 @@
 spring:
   datasource:
-    driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/expensapp
-    username: postgres
+    url: jdbc:mysql://localhost:3306/expensapp?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
     password: admin
 
   # JPA Properties
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQL94Dialect
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
     # Hibernate ddl auto (create, create-drop, validate, update)
     # CREATE: Cada vez que se inicia la app, crea la tabla

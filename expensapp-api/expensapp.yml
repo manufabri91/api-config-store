@@ -8,7 +8,7 @@ spring:
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+        dialect: org.hibernate.dialect.PostgreSQL94Dialect
 
     # Hibernate ddl auto (create, create-drop, validate, update)
     # CREATE: Cada vez que se inicia la app, crea la tabla

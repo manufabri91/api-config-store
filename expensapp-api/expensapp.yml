@@ -4,12 +4,12 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-
-    # Hibernate ddl auto (create, create-drop, validate, update)
-    # CREATE: Cada vez que se inicia la app, crea la tabla
-    # CREATE-DROP: Cada vez que se inicia la app, crea la tabla y cuando se detiene la borra
-    # VALIDATE: A revisar.
-    # UPDATE: Crea la tabla si no existe, pero si existe la actualiza
-
-    hibernate:
-      ddl-auto: update
+        # Hibernate ddl auto (create, create-drop, validate, update)
+        # CREATE: Cada vez que se inicia la app, crea la tabla
+        # CREATE-DROP: Cada vez que se inicia la app, crea la tabla y cuando se detiene la borra
+        # VALIDATE: A revisar.
+        # UPDATE: Crea la tabla si no existe, pero si existe la actualiza
+        ddl-auto: update
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl

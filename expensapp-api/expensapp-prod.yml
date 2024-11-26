@@ -3,3 +3,7 @@ spring:
     url: '{cipher}toBeDefined'
     username: '{cipher}toBeDefined'
     password: '{cipher}toBeDefined'
+  jpa:
+    properties:
+      hibernate:
+        show-sql: true

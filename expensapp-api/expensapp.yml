@@ -10,8 +10,6 @@ spring:
         # VALIDATE: A revisar.
         # UPDATE: Crea la tabla si no existe, pero si existe la actualiza
         ddl-auto: update
-        show-sql: true
-        format_sql: true
         naming:
           physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
           implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy

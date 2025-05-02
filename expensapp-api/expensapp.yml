@@ -1,4 +1,8 @@
 spring:
+  datasource:
+    url: jdbc:postgresql://postgresdb:5432/expensapp
+    username: postgres
+    password: admin
   # JPA Properties
   jpa:
     properties:

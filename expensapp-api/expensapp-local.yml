@@ -9,7 +9,7 @@ logging:
         SQL: DEBUG
 spring:
   datasource:
-    url: jdbc:postgresql://db:5433/expensapp?createDatabaseIfNotExist=true&serverTimezone=UTC
+    url: jdbc:postgresql://db:5432/expensapp?createDatabaseIfNotExist=true&serverTimezone=UTC
   jpa:
     properties:
       hibernate:

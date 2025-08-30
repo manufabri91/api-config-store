@@ -3,3 +3,10 @@ spring:
     url: '{cipher}b44285d09e5da1d32e7df5b4769b16fa27e9c9c7fce961d79a04c81b7d7f785ff1f498a89b382e73ada498c6eb0233c32405739784c10c9d7b18d275b7f0d72a8f3ca06147546e03b5930e3027c46dc925e0e47f05fbab3cd05574b2f89f76d522b4e31d0702e0445e9f4ae8db22e533'
     username: '{cipher}1ac6067be544a88fbfb459eccc9ed8cd2745004b1d9fcb2b3aada3487e25dab65b4a0de0d40e2e56c6e639c3b0dcf852'
     password: '{cipher}8b31c99dce392adea2d3fb15e7ea6ba887af5655d50c14ead8e9ebfc929add42'
+    hikari:
+      maximumPoolSize: 10
+      minimumIdle: 2
+      idleTimeout: 20000
+      maxLifetime: 30000
+      keepaliveTime: 10000
+      leakDetectionThreshold: 2000

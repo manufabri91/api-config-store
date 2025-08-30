@@ -9,4 +9,4 @@ spring:
       idleTimeout: 20000
       maxLifetime: 30000
       keepaliveTime: 10000
-      leakDetectionThreshold: 2000
+      leakDetectionThreshold: 5000

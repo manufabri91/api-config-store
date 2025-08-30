@@ -8,6 +8,8 @@ logging:
               BasicBinder: TRACE
         SQL: DEBUG
 spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/expensapp?createDatabaseIfNotExist=true&serverTimezone=UTC
   jpa:
     properties:
       hibernate:

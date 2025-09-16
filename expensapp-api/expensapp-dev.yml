@@ -4,9 +4,9 @@ spring:
     username: '{cipher}1ac6067be544a88fbfb459eccc9ed8cd2745004b1d9fcb2b3aada3487e25dab65b4a0de0d40e2e56c6e639c3b0dcf852'
     password: '{cipher}8b31c99dce392adea2d3fb15e7ea6ba887af5655d50c14ead8e9ebfc929add42'
     hikari:
-      maximumPoolSize: 10
-      minimumIdle: 2
-      idleTimeout: 20000
-      maxLifetime: 30000
-      keepaliveTime: 10000
-      leakDetectionThreshold: 5000
+      maximumPoolSize: 10       # Small pool, fine for low traffic
+      minimumIdle: 2            # Keep a couple of warm connections ready
+      idleTimeout: 60000        # 60s (close extra idle connections after 1 minute)
+      maxLifetime: 1800000      # 30 min (avoid DB/network killing stale connections)
+      # keepaliveTime: 300000     # 5 min (light ping to keep connections alive)
+      leakDetectionThreshold: 20000  # 20s (warn if a connection is held too long)

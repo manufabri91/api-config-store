@@ -7,18 +7,13 @@ spring:
     password: admin
   # JPA Properties
   jpa:
+    hibernate:
+      ddl-auto: validate
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-        # Hibernate ddl auto (create, create-drop, validate, update)
-        # CREATE: Cada vez que se inicia la app, crea la tabla
-        # CREATE-DROP: Cada vez que se inicia la app, crea la tabla y cuando se detiene la borra
-        # VALIDATE: A revisar.
-        # UPDATE: Crea la tabla si no existe, pero si existe la actualiza
-        ddl-auto: update
-        naming:
-          physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
-          implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
 management:
   endpoints:
     web:
